@@ -1,0 +1,18 @@
+$black-color: #000;
+$main-btn-shadow: 0px 9px 14px rgba(0, 192, 240, 0.09);
+$box-shadow: 3px 3px 20px rgba(107, 107, 107, 0.34);
+$border-radius: 8px;
+$btn-bg:#911D74;
+$dark-bg:#371638;
+$text-color:#6D2B70;
+$gray-text:#C1C1C1;
+:root {
+  --border-radius-lg: 16px;
+  @include media-breakpoint-down(md) {
+    --border-radius-lg: 12px;
+  }
+  @include media-breakpoint-down(sm) {
+    --border-radius-lg: 10px;
+  }
+}
+

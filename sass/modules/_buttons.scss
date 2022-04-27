@@ -1,0 +1,16 @@
+.main-btn{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 25px 12px 25px;
+  border-radius: 8px;
+  background-color: $btn-bg;
+  color: $white;
+  border: 2px solid $btn-bg;
+  font-size: 18px;
+  font-weight: 500;
+  &:hover{
+    color: $btn-bg;
+    background-color: $white;
+  }
+}

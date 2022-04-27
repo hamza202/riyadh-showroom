@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" type="image/png" href="/images/fav.png">
+    <link rel="stylesheet" href="css/main-rtl.css">
+    <title>معرض الرياض</title>
+</head>
+<body>
+<ul class="side-menu list-unstyled" id="side_menu">
+    <li data-menuanchor="firstPage" class="active" >
+        <a href="#firstPage">
+            <img src="images/menu/1.jpg" alt="menu-img">
+        </a>
+    </li>
+    <li data-menuanchor="secondPage">
+        <a href="#secondPage">
+            <img src="images/menu/2.jpg" alt="menu-img">
+        </a>
+    </li>
+    <li data-menuanchor="3rdPage">
+        <a href="#3rdPage">
+            <img src="images/menu/3.jpg" alt="menu-img">
+        </a>
+    </li>
+    <li data-menuanchor="4thpage">
+        <a href="#4thpage">
+            <img src="images/menu/4.jpg" alt="menu-img">
+        </a>
+    </li>
+</ul>
+<div id="fullpage">
+    <div class="section " id="section0">
+        <video id="myVideo" loop muted data-autoplay playsinline>
+            <source src="images/flowers.mp4" type="video/mp4">
+            <source src="images/flowers.webm" type="video/webm">
+        </video>
+        <div class="layer">
+            <div class="full-page-container">
+                <div class="container-content">
+                    <img class="mw-70 second-logo mb-2" src="images/second-logo.svg" alt="">
+                    <h3 class="section-title">معرض الرياض</h3>
+                    <h5>لألعــــــــاب الأطفــــــــــــال</h5>
+                    <p>
+                        ها هو معرض الرياض لألعاب الأطفال قد انطلق وهو يعدّ من أهم وامتع المعارض التي تقدمها المملكة العربية السعودية
+                    </p>
+                    <a class="main-btn mt-4" href="#">
+                        حجز تذاكر
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section" id="section1" style="background-image: url('images/slide2.jpg')">
+
+            <div class="full-page-container">
+                <div class="container-content">
+                    <h3 class="section-title">العارضين</h3>
+                    <h5>مساحات متنوعه</h5>
+                    <p>
+                        اخترنا افضل المساحات وبعدة مقاسات لتناسم العارضين ببرنامج ممتع للزوار يمكنهم من قضاء يوم مرح لن ينسوه ابدا
+                    </p>
+                    <a class="main-btn mt-4" href="#">
+                        استعراض
+                    </a>
+                </div>
+        </div>
+    </div>
+    <div class="section" id="section2" style="background-image: url('images/slide3.jpg')">
+
+        <div class="full-page-container">
+            <div class="container-content">
+                <h3 class="section-title">السفر والفنادق</h3>
+                <h5>عروض واسعار مميزة</h5>
+                <p>
+                    وفرنا لكم افضل العروض من افضل الشركات لتذاكر السفر وحجوزات من افضل الفنادق مع عروض مميزة
+                </p>
+                <a class="main-btn mt-4" href="#">
+                    احجز الان
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="section" id="section3" style="background-image: url('images/slide4.jpg')">
+
+        <div class="full-page-container">
+            <div class="container-content">
+                <h3 class="section-title">الرعاة</h3>
+                <h5>مميزات وعروض قوية</h5>
+                <p>
+                    رعاية معرض الرياض لألعاب الاطفال تعد فرصة وهدف للإنضمام لأسرة صناع المرح في العالم
+                </p>
+                <a class="main-btn mt-4" href="#">
+                    سجل الان
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="section" id="section4">
+        <div class="help-map-container">
+            <div class="container-content">
+                <h3 class="section-title">الرعاة</h3>
+                <h5>مميزات وعروض قوية</h5>
+                <p>
+                    رعاية معرض الرياض لألعاب الاطفال تعد فرصة وهدف للإنضمام لأسرة صناع المرح في العالم
+                </p>
+                <a class="main-btn mt-4" href="#">
+                    سجل الان
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/jquery-3.5.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/fullpage.min.js"></script>
+<script type="text/javascript">
+    var myFullpage = new fullpage('#fullpage', {
+        verticalCentered: true,
+        sectionsColor: ['#1bbc9b', '#4BBFC3'],
+        anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage'],
+        menu: '#side_menu',
+        lazyLoad: true,
+    });
+</script>
+</body>
+</html>

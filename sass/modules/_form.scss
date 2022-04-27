@@ -1,0 +1,20 @@
+.parsley-errors-list {
+  list-style: none;
+  padding-#{$dir}: 5px;
+  position: absolute;
+  bottom: -18px;
+  color: #EB402E;
+  font-size: 12px;
+  margin: 0;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}

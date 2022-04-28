@@ -14,6 +14,10 @@
   }
 }
 
+.gray-color {
+  color: #C1C1C1;
+}
+
 /* content better media queries */
 @font-face {
   font-family: "DIN";
@@ -62,21 +66,21 @@
   }
 }
 
-.text-2 {
+.text-2, .help-team-box .team-info h4, .help-section-container .help-section-title p {
   font-size: 18px;
 }
 @media (min-width: 1400px) {
-  .text-2 {
+  .text-2, .help-team-box .team-info h4, .help-section-container .help-section-title p {
     font-size: 21px;
   }
 }
 @media (max-width: 1199.98px) {
-  .text-2 {
+  .text-2, .help-team-box .team-info h4, .help-section-container .help-section-title p {
     font-size: 17px;
   }
 }
 @media (max-width: 575.98px) {
-  .text-2 {
+  .text-2, .help-team-box .team-info h4, .help-section-container .help-section-title p {
     font-size: 15px;
   }
 }
@@ -384,6 +388,11 @@ button:focus {
           transform: translateY(-50%);
   z-index: 100;
 }
+@media (max-width: 767.98px) {
+  .side-menu {
+    display: none;
+  }
+}
 
 .section-title {
   font-size: 50px;
@@ -417,4 +426,50 @@ button:focus {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.help-section-container {
+  padding-top: 100px;
+}
+.help-section-container .help-section-title p {
+  color: rgba(0, 0, 0, 0.5);
+  max-width: 515px;
+  margin: 0 auto;
+  letter-spacing: 1px;
+}
+
+.help-team-box .team-info img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: 2px solid #911D74;
+}
+.help-team-box .team-info h4 {
+  color: #911D74;
+}
+.help-team-box ul {
+  margin-top: 0.5rem;
+  -webkit-padding-start: 5px;
+          padding-inline-start: 5px;
+}
+.help-team-box ul li svg {
+  max-height: 16px;
+  width: 22px;
+}
+.help-team-box ul li a {
+  -webkit-margin-start: 5px;
+          margin-inline-start: 5px;
+  -webkit-padding-start: 5px;
+          padding-inline-start: 5px;
+  -webkit-border-start: 1px solid #C1C1C1;
+          border-inline-start: 1px solid #C1C1C1;
+  color: #000;
+}
+.help-team-box ul li a:hover {
+  color: #371638;
+}
+.help-team-box ul li:not(:last-child) {
+  margin-bottom: 0.1rem;
 }

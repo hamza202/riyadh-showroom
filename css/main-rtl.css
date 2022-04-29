@@ -427,7 +427,7 @@ button:focus {
   outline: none;
 }
 
-#myVideo {
+.section video {
   position: absolute;
   right: 0;
   bottom: 0;
@@ -442,7 +442,7 @@ button:focus {
   z-index: 3;
 }
 
-#section0 .layer {
+.section .layer {
   position: absolute;
   z-index: 4;
   width: 100%;

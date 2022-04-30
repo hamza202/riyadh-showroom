@@ -1,0 +1,132 @@
+header{
+  transition: all ease-in-out 0.3s;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  left: 0;
+  z-index: 200;
+  padding: 30px 0;
+  .menu-top-bar{
+    transition: all ease-in-out 0.3s;
+  }
+  &.menu-is-open{
+    .top-menu-container {
+      opacity: 1;
+      visibility: visible;
+      height: 100vh;
+    }
+    .menu-top-bar{
+      opacity: 0;
+    }
+  }
+}
+.open-menu-btn{
+  background-color: transparent;
+  border: 0;
+  direction: $opbDir;
+  span{
+    transition: all ease-in-out 0.3s;
+    width: 16px;
+    height: 3px;
+    border-radius: 3px;
+    background-color: #fff;
+    display: block;
+    margin: 6px 0;
+    &:nth-child(2){
+      width: 32px;
+    }
+    &:nth-child(3){
+      width: 22px;
+    }
+  }
+  &:hover{
+    span{
+      width: 32px !important;
+    }
+  }
+}
+.top-menu-container{
+  transform-origin:  top;
+  transition: all ease-in-out 0.4s;
+  overflow: hidden;
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  height: 0;
+  background-color: rgba($dark-bg , 0.93);
+  padding: 30px 0;
+}
+.close-menu-btn{
+  background-color: transparent;
+  border: 0;
+  transition: all ease-in-out 0.3s;
+  svg{
+    @include media-breakpoint-down(sm){
+      width: 25px;
+      height: auto;
+    }
+  }
+  &:hover{
+    opacity: 0.5;
+  }
+}
+.menu-lang{
+  font-size: 18px;
+  color: $white;
+  &:hover{
+    color: $gray-text;
+  }
+  svg{
+    margin-inline-start: 1px;
+    margin-top: -2px;
+  }
+}
+.user-menu{
+  margin-bottom: 2rem;
+  text-align: center;
+  display: inline-block;
+  span{
+    display: block;
+    margin-top: 0.5rem;
+    color: $white;
+    @extend .text-2;
+    transition: all ease-in-out 0.3s;
+  }
+  img{
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+    @include media-breakpoint-down(sm){
+      width: 60px;
+      height: 60px;
+    }
+  }
+  &:hover{
+    span{
+      color: $gray-text;
+    }
+  }
+}
+.menu-list{
+  text-align: center;
+  a{
+    color: $white;
+    @extend %text-3;
+    svg{
+      margin-inline-end: 3px;
+    }
+    &:hover{
+      color: $gray-text;
+    }
+  }
+  li{
+    margin-bottom: 15px;
+    &:not(:last-child){
+      margin-inline-end: 0.9rem;
+    }
+  }
+}

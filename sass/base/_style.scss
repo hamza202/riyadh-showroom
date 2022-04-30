@@ -1,4 +1,5 @@
 body {
+  position: relative;
   font-family: 'DIN', sans-serif;
   font-size: $base-font-size;
   @include media-breakpoint-down(sm){
@@ -36,7 +37,7 @@ html {
 }
 
 .container-content {
-  width: 92%;
+  width: 89%;
   @include media-breakpoint-down(md) {
     width: 95%;
   }
@@ -149,6 +150,7 @@ button:focus {
 }
 
 .side-menu {
+  transition: all ease-in-out 0.3s;
   position: fixed;
   #{$opDir}: 5%;
   top: 50%;
@@ -274,4 +276,8 @@ button:focus {
 #map{
   width: 100%;
   height: 40vh;
+}
+.fp-viewing-help_section .side-menu,.fp-viewing-footer_section .side-menu,.fp-viewing-help_section header,.fp-viewing-footer_section header{
+  opacity: 0;
+  visibility: hidden;
 }

@@ -66,21 +66,21 @@
   }
 }
 
-.text-2, .help-team-box .team-info h4, .help-section-container .help-section-title p, .user-menu span {
+.text-2, .our-breadcrumb .breadcrumb-title h1, .help-team-box .team-info h4, .help-section-container .help-section-title p, .user-menu span {
   font-size: 18px;
 }
 @media (min-width: 1400px) {
-  .text-2, .help-team-box .team-info h4, .help-section-container .help-section-title p, .user-menu span {
+  .text-2, .our-breadcrumb .breadcrumb-title h1, .help-team-box .team-info h4, .help-section-container .help-section-title p, .user-menu span {
     font-size: 21px;
   }
 }
 @media (max-width: 1199.98px) {
-  .text-2, .help-team-box .team-info h4, .help-section-container .help-section-title p, .user-menu span {
+  .text-2, .our-breadcrumb .breadcrumb-title h1, .help-team-box .team-info h4, .help-section-container .help-section-title p, .user-menu span {
     font-size: 17px;
   }
 }
 @media (max-width: 575.98px) {
-  .text-2, .help-team-box .team-info h4, .help-section-container .help-section-title p, .user-menu span {
+  .text-2, .our-breadcrumb .breadcrumb-title h1, .help-team-box .team-info h4, .help-section-container .help-section-title p, .user-menu span {
     font-size: 15px;
   }
 }
@@ -764,4 +764,52 @@ button:focus {
 .fp-viewing-help_section .side-menu, .fp-viewing-footer_section .side-menu, .fp-viewing-help_section header, .fp-viewing-footer_section header {
   opacity: 0;
   visibility: hidden;
+}
+
+.our-breadcrumb {
+  position: relative;
+}
+.our-breadcrumb img {
+  width: 100%;
+  height: auto;
+}
+.our-breadcrumb .breadcrumb-title {
+  z-index: 2;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -80%);
+          transform: translate(-50%, -80%);
+  padding: 15px;
+}
+.our-breadcrumb .breadcrumb-title h1 {
+  margin: 0;
+  color: #fff;
+  font-weight: 700;
+}
+.our-breadcrumb:after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 100%;
+  left: 0;
+  top: 0;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.page-section-bg {
+  background-color: #371638;
+  padding-bottom: 150px;
+}
+.page-section-bg .page-section-content {
+  margin-top: -150px;
+}
+
+.create-account-type-container .account-type-box {
+  height: 410px;
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+  overflow: hidden;
 }

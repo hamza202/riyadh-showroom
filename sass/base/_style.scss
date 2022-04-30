@@ -281,3 +281,50 @@ button:focus {
   opacity: 0;
   visibility: hidden;
 }
+.our-breadcrumb{
+  img{
+    width: 100%;
+    height: auto;
+  }
+  position: relative;
+  .breadcrumb-title{
+    z-index: 2;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -80%);
+    padding: 15px;
+    h1{
+      margin: 0;
+      color: $white;
+      @extend .text-2;
+      font-weight: 700;
+    }
+  }
+  &:after{
+    position: absolute;
+    content: '';
+    display: block;
+    width: 100%;
+    left: 0;
+    top:0;
+    height: 100%;
+    background-color: rgba($black-color, 0.5);
+  }
+}
+.page-section-bg{
+  background-color: $dark-bg;
+  padding-bottom: 150px;
+  .page-section-content{
+    margin-top: -150px;
+  }
+}
+.create-account-type-container{
+  .account-type-box{
+    height: 410px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+}

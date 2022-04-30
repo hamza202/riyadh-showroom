@@ -285,6 +285,8 @@ button:focus {
   img{
     width: 100%;
     height: auto;
+    min-height: 150px;
+    object-fit: cover;
   }
   position: relative;
   .breadcrumb-title{
@@ -293,6 +295,9 @@ button:focus {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -80%);
+    @include media-breakpoint-down(md){
+      transform: translate(-50%, -22%);
+    }
     padding: 15px;
     h1{
       margin: 0;
@@ -316,7 +321,10 @@ button:focus {
   background-color: $dark-bg;
   padding-bottom: 150px;
   .page-section-content{
-    margin-top: -150px;
+    margin-top: -5vw;
+    //@include media-breakpoint-down(xxl){
+    //  margin-top: ;
+    //}
   }
 }
 .create-account-type-container{
@@ -326,5 +334,36 @@ button:focus {
     background-size: cover;
     border-radius: 10px;
     overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    &::before{
+      content: '';
+      position: absolute;
+      display: block;
+      width: 105%;
+      height: 105%;
+      top: -2.5%;
+      left: -2.5%;
+      background-color: rgba($dark-bg , 0.90);
+    }
+    .account-type-info{
+      position: relative;
+      z-index: 2;
+      text-align: center;
+      h3{
+        color: $white;
+        margin-bottom: 2rem;
+        @extend .title-3;
+      }
+      img{
+        margin-bottom: 2rem;
+        max-width: 90%;
+      }
+      .main-btn{
+        min-width: 50%;
+      }
+    }
   }
 }

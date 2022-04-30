@@ -151,21 +151,21 @@
   }
 }
 
-.full-page-container h5, .title-3 {
+.full-page-container h5, .title-3, .create-account-type-container .account-type-box .account-type-info h3 {
   font-size: 26px;
 }
 @media (min-width: 1400px) {
-  .full-page-container h5, .title-3 {
+  .full-page-container h5, .title-3, .create-account-type-container .account-type-box .account-type-info h3 {
     font-size: 30px;
   }
 }
 @media (max-width: 1199.98px) {
-  .full-page-container h5, .title-3 {
+  .full-page-container h5, .title-3, .create-account-type-container .account-type-box .account-type-info h3 {
     font-size: 25px;
   }
 }
 @media (max-width: 575.98px) {
-  .full-page-container h5, .title-3 {
+  .full-page-container h5, .title-3, .create-account-type-container .account-type-box .account-type-info h3 {
     font-size: 18px;
   }
 }
@@ -243,9 +243,19 @@ header {
   z-index: 200;
   padding: 30px 0;
 }
+@media (max-width: 767.98px) {
+  header {
+    padding: 10px 0;
+  }
+}
 header .menu-top-bar {
   -webkit-transition: all ease-in-out 0.3s;
   transition: all ease-in-out 0.3s;
+}
+@media (max-width: 575.98px) {
+  header .menu-top-bar img {
+    width: 150px;
+  }
 }
 header.menu-is-open .top-menu-container {
   opacity: 1;
@@ -772,6 +782,9 @@ button:focus {
 .our-breadcrumb img {
   width: 100%;
   height: auto;
+  min-height: 150px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .our-breadcrumb .breadcrumb-title {
   z-index: 2;
@@ -781,6 +794,12 @@ button:focus {
   -webkit-transform: translate(-50%, -80%);
           transform: translate(-50%, -80%);
   padding: 15px;
+}
+@media (max-width: 767.98px) {
+  .our-breadcrumb .breadcrumb-title {
+    -webkit-transform: translate(-50%, -22%);
+            transform: translate(-50%, -22%);
+  }
 }
 .our-breadcrumb .breadcrumb-title h1 {
   margin: 0;
@@ -803,7 +822,7 @@ button:focus {
   padding-bottom: 150px;
 }
 .page-section-bg .page-section-content {
-  margin-top: -150px;
+  margin-top: -5vw;
 }
 
 .create-account-type-container .account-type-box {
@@ -812,4 +831,40 @@ button:focus {
   background-size: cover;
   border-radius: 10px;
   overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+.create-account-type-container .account-type-box::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 105%;
+  height: 105%;
+  top: -2.5%;
+  left: -2.5%;
+  background-color: rgba(55, 22, 56, 0.9);
+}
+.create-account-type-container .account-type-box .account-type-info {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+.create-account-type-container .account-type-box .account-type-info h3 {
+  color: #fff;
+  margin-bottom: 2rem;
+}
+.create-account-type-container .account-type-box .account-type-info img {
+  margin-bottom: 2rem;
+  max-width: 90%;
+}
+.create-account-type-container .account-type-box .account-type-info .main-btn {
+  min-width: 50%;
 }

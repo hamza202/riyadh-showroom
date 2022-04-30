@@ -6,8 +6,16 @@ header{
   left: 0;
   z-index: 200;
   padding: 30px 0;
+  @include media-breakpoint-down(md){
+    padding: 10px 0;
+  }
   .menu-top-bar{
     transition: all ease-in-out 0.3s;
+    img{
+      @include media-breakpoint-down(sm){
+        width: 150px;
+      }
+    }
   }
   &.menu-is-open{
     .top-menu-container {

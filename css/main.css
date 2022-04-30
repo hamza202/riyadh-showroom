@@ -18,6 +18,14 @@
   color: #C1C1C1;
 }
 
+.gray-dark-color {
+  color: #646464;
+}
+
+.black-color {
+  color: #000;
+}
+
 /* content better media queries */
 @font-face {
   font-family: "DIN";
@@ -206,20 +214,27 @@
   border: 2px solid #911D74;
   font-size: 18px;
   font-weight: 500;
+  -webkit-transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s;
 }
 .main-btn:hover {
   color: #911D74;
   background-color: #fff;
 }
 
+.link:hover {
+  color: #911D74;
+}
+
 .parsley-errors-list {
   list-style: none;
   padding-left: 5px;
   position: absolute;
-  bottom: -18px;
+  bottom: -19px;
   color: #EB402E;
-  font-size: 12px;
+  font-size: 14px;
   margin: 0;
+  font-weight: 400;
 }
 
 input::-webkit-outer-spin-button,
@@ -231,6 +246,80 @@ input::-webkit-inner-spin-button {
 /* Firefox */
 input[type=number] {
   -moz-appearance: textfield;
+}
+
+.form-img {
+  background-position: center;
+  background-size: cover;
+}
+
+.form-container {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.form-inner {
+  background-color: #fff;
+  padding: 40px;
+}
+
+.form .form-input-container {
+  position: relative;
+  margin-bottom: 25px;
+}
+.form .form-input-container input {
+  min-height: 45px;
+}
+.form .input-icon {
+  position: relative;
+}
+.form .input-icon .input-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 8px;
+  width: 20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.form .input-icon input {
+  -webkit-padding-start: 30px;
+          padding-inline-start: 30px;
+  direction: ltr;
+}
+
+.form-control:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-color: #911D74;
+}
+
+.form-control {
+  border-radius: 8px;
+}
+
+.form-check-input:checked {
+  background-color: #911D74;
+  border-color: #911D74;
+}
+
+.form-check-input:focus {
+  border-color: #911D74;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.form-check-input {
+  cursor: pointer;
+}
+
+.form-check label {
+  cursor: pointer;
 }
 
 header {
@@ -819,13 +908,24 @@ button:focus {
 
 .page-section-bg {
   background-color: #371638;
-  padding-bottom: 150px;
+  padding-bottom: 120px;
+}
+@media (max-width: 767.98px) {
+  .page-section-bg {
+    padding-bottom: 50px;
+  }
 }
 .page-section-bg .page-section-content {
   margin-top: -5vw;
 }
+@media (max-width: 575.98px) {
+  .page-section-bg .page-section-content {
+    margin-top: -9vw;
+  }
+}
 
 .create-account-type-container .account-type-box {
+  margin-bottom: 30px;
   height: 410px;
   background-position: center;
   background-size: cover;

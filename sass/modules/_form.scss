@@ -2,10 +2,11 @@
   list-style: none;
   padding-#{$dir}: 5px;
   position: absolute;
-  bottom: -18px;
+  bottom: -19px;
   color: #EB402E;
-  font-size: 12px;
+  font-size: 14px;
   margin: 0;
+  font-weight: 400;
 }
 
 input::-webkit-outer-spin-button,
@@ -17,4 +18,70 @@ input::-webkit-inner-spin-button {
 /* Firefox */
 input[type=number] {
   -moz-appearance: textfield;
+}
+
+.form-img {
+  background-position: center;
+  background-size: cover;
+}
+
+.form-container {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.form-inner {
+  background-color: $white;
+  padding: 40px;
+}
+
+.form {
+  .form-input-container {
+    position: relative;
+    margin-bottom: 25px;
+    input {
+      min-height: 45px;
+    }
+  }
+  .input-icon{
+    position: relative;
+    .input-img{
+      display: flex;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      #{$dir}:8px;
+      width: 20px;
+      justify-content: center;
+    }
+    input{
+      padding-inline-start: 30px;
+      direction: $bDir;
+    }
+  }
+}
+
+
+.form-control:focus {
+  box-shadow: none;
+  border-color: $btn-bg;
+}
+.form-control{
+  border-radius: 8px;
+}
+.form-check-input:checked {
+  background-color: $btn-bg;
+  border-color: $btn-bg;
+}
+.form-check-input:focus {
+  border-color: $btn-bg;
+  box-shadow:none;
+}
+.form-check-input{
+  cursor: pointer;
+}
+.form-check{
+  label{
+    cursor: pointer;
+  }
 }

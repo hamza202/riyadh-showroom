@@ -53,6 +53,7 @@ input[type=number] {
       #{$dir}:8px;
       width: 20px;
       justify-content: center;
+      pointer-events: none;
     }
     input{
       padding-inline-start: 30px;
@@ -84,4 +85,88 @@ input[type=number] {
   label{
     cursor: pointer;
   }
+}
+.bootstrap-select-icon{
+  position: relative;
+  .filter-option-inner-inner{
+    padding-inline-start: 20px;
+  }
+  .input-img{
+    display: flex;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    #{$dir}:8px;
+    width: 20px;
+    justify-content: center;
+    z-index: 2;
+    pointer-events: none;
+  }
+}
+.bootstrap-select>.dropdown-toggle.bs-placeholder{
+  background-color: transparent;
+  border: 1px solid #ced4da;
+  border-radius: 8px;
+  min-height: 45px;
+}
+.bootstrap-select{
+  width: 100% !important;
+}
+.bootstrap-select .dropdown-toggle .filter-option{
+  text-align: $dir;
+}
+.bootstrap-select > .dropdown-toggle.bs-placeholder, .bootstrap-select .dropdown-toggle:focus{
+  outline: none !important;
+  box-shadow: none !important;
+  background-color: $white;
+  height: 45px;
+  border: 1px solid #ced4da;
+  border-radius: 8px;
+}
+.bootstrap-select .btn.show{
+  border-color: $btn-bg !important;
+}
+.bootstrap-select>.dropdown-toggle{
+  height: 45px;
+  border-radius: 8px;
+  outline: none !important;
+  box-shadow: none !important;
+  background-color: $white;
+  border: 1px solid #ced4da;
+}
+.bootstrap-select .dropdown-item.active, .dropdown-item:active{
+  background-color: $btn-bg;
+}
+.bootstrap-select>.dropdown-toggle:after{
+  display: none;
+}
+.bootstrap-select>.dropdown-toggle{
+  &:before{
+    transition: all ease-in-out 0.3s;
+    transform-origin:center ;
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    #{$opDir}: 7px;
+    display: block;
+    width: 12px;
+    height: 7px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='17.508' height='10.254' viewBox='0 0 17.508 10.254'%3E%3Cpath id='Icon_feather-chevron-down' data-name='Icon feather-chevron-down' d='M9,13.5l6.633,6.633L22.266,13.5' transform='translate(-6.879 -11.379)' fill='none' stroke='%23c1c1c1' stroke-linecap='round' stroke-linejoin='round' stroke-width='3'/%3E%3C/svg%3E%0A");
+  }
+}
+.bootstrap-select>.dropdown-toggle.show{
+  &:before{
+    transform: rotate(180deg) translateY(50%);
+  }
+}
+.bs-placeholder .filter-option-inner-inner{
+  color: #777;
+}
+.bootstrap-select .dropdown-toggle .filter-option{
+  display: flex;
+  align-items: center;
 }

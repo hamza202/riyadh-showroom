@@ -294,7 +294,7 @@ button:focus {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -80%);
+    transform: translate(-50%, -50%);
     @include media-breakpoint-down(md){
       transform: translate(-50%, -22%);
     }

@@ -304,6 +304,15 @@ button:focus {
       color: $white;
       @extend .text-2;
       font-weight: 700;
+      svg{
+        max-height: 40px;
+        max-width: 40px;
+        margin-inline-end: 5px;
+        @include media-breakpoint-down(md){
+          max-width: 30px;
+          max-height: 30px;
+        }
+      }
     }
   }
   &:after{
@@ -459,6 +468,40 @@ button:focus {
       &:checked + label{
         border-color: $btn-bg;
       }
+    }
+  }
+}
+.profile-info{
+  .profile-img{
+    text-align: center;
+    img{
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      border:2px solid #F5F5F5 ;
+      object-fit: cover;
+
+    }
+  }
+}
+.profile-user-name{
+  align-items: center;
+  p{
+    @extend %text-2;
+    padding-bottom: 4px;
+  }
+}
+.profile-info-list{
+  li{
+    color: #646464;
+    display: flex;
+    align-items: center;
+    unicode-bidi: plaintext;
+    svg{
+      margin-inline-end: 6px;
+      margin-bottom: -3px;
+      width: 14px;
+      height: auto;
     }
   }
 }

@@ -25,6 +25,16 @@
     background-color: $gray-text;
   }
 }
+.white-btn{
+  @extend .main-btn;
+  background-color: $white;
+  color: $btn-bg;
+  border-color: $white;
+  &:hover{
+    background-color: $btn-bg;
+    color: $white;
+  }
+}
 .link{
   &:hover{
     color: $btn-bg;

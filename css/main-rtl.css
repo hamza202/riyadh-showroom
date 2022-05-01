@@ -76,22 +76,22 @@
   }
 }
 
-.text-2, .our-breadcrumb .breadcrumb-title h1, .help-team-box .team-info h4, .help-section-container .help-section-title p, .user-menu span {
+.profile-user-name p, .text-2, .our-breadcrumb .breadcrumb-title h1, .help-team-box .team-info h4, .help-section-container .help-section-title p, .user-menu span {
   font-size: 18px;
 }
 @media (min-width: 1400px) {
-  .text-2, .our-breadcrumb .breadcrumb-title h1, .help-team-box .team-info h4, .help-section-container .help-section-title p, .user-menu span {
+  .profile-user-name p, .text-2, .our-breadcrumb .breadcrumb-title h1, .help-team-box .team-info h4, .help-section-container .help-section-title p, .user-menu span {
     font-size: 21px;
   }
 }
 @media (max-width: 1199.98px) {
-  .text-2, .our-breadcrumb .breadcrumb-title h1, .help-team-box .team-info h4, .help-section-container .help-section-title p, .user-menu span {
+  .profile-user-name p, .text-2, .our-breadcrumb .breadcrumb-title h1, .help-team-box .team-info h4, .help-section-container .help-section-title p, .user-menu span {
     font-size: 17px;
   }
 }
 @media (max-width: 575.98px) {
-  .text-2, .our-breadcrumb .breadcrumb-title h1, .help-team-box .team-info h4, .help-section-container .help-section-title p, .user-menu span {
-    font-size: 15px;
+  .profile-user-name p, .text-2, .our-breadcrumb .breadcrumb-title h1, .help-team-box .team-info h4, .help-section-container .help-section-title p, .user-menu span {
+    font-size: 16px;
   }
 }
 
@@ -199,7 +199,7 @@
   }
 }
 
-.main-btn, .gray-outline-btn {
+.main-btn, .white-btn, .gray-outline-btn {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -219,7 +219,7 @@
   -webkit-transition: all ease-in-out 0.3s;
   transition: all ease-in-out 0.3s;
 }
-.main-btn:hover, .gray-outline-btn:hover {
+.main-btn:hover, .white-btn:hover, .gray-outline-btn:hover {
   color: #911D74;
   background-color: #fff;
 }
@@ -232,6 +232,16 @@
 .gray-outline-btn:hover {
   color: #646464;
   background-color: #C1C1C1;
+}
+
+.white-btn {
+  background-color: #fff;
+  color: #911D74;
+  border-color: #fff;
+}
+.white-btn:hover {
+  background-color: #911D74;
+  color: #fff;
 }
 
 .link:hover {
@@ -1084,6 +1094,18 @@ button:focus {
   color: #fff;
   font-weight: 700;
 }
+.our-breadcrumb .breadcrumb-title h1 svg {
+  max-height: 40px;
+  max-width: 40px;
+  -webkit-margin-end: 5px;
+          margin-inline-end: 5px;
+}
+@media (max-width: 767.98px) {
+  .our-breadcrumb .breadcrumb-title h1 svg {
+    max-width: 30px;
+    max-height: 30px;
+  }
+}
 .our-breadcrumb:after {
   position: absolute;
   content: "";
@@ -1154,7 +1176,7 @@ button:focus {
   margin-bottom: 2rem;
   max-width: 90%;
 }
-.create-account-type-container .account-type-box .account-type-info .main-btn, .create-account-type-container .account-type-box .account-type-info .gray-outline-btn {
+.create-account-type-container .account-type-box .account-type-info .main-btn, .create-account-type-container .account-type-box .account-type-info .gray-outline-btn, .create-account-type-container .account-type-box .account-type-info .white-btn {
   min-width: 50%;
 }
 
@@ -1261,4 +1283,44 @@ button:focus {
 }
 .places-container .place-check .form-check-input:checked + label {
   border-color: #911D74;
+}
+
+.profile-info .profile-img {
+  text-align: center;
+}
+.profile-info .profile-img img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 2px solid #F5F5F5;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.profile-user-name {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.profile-user-name p {
+  padding-bottom: 4px;
+}
+
+.profile-info-list li {
+  color: #646464;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  unicode-bidi: -moz-plaintext;
+  unicode-bidi: plaintext;
+}
+.profile-info-list li svg {
+  -webkit-margin-end: 6px;
+          margin-inline-end: 6px;
+  margin-bottom: -3px;
+  width: 14px;
+  height: auto;
 }

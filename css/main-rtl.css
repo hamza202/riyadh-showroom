@@ -195,7 +195,7 @@
 }
 @media (max-width: 575.98px) {
   .title-4 {
-    font-size: 16px;
+    font-size: 18px;
   }
 }
 
@@ -1146,4 +1146,49 @@ button:focus {
 }
 .create-account-type-container .account-type-box .account-type-info .main-btn {
   min-width: 50%;
+}
+
+.my-card, .package-box {
+  padding: 30px;
+  border-radius: 10px;
+  background-color: #fff;
+}
+@media (max-width: 767.98px) {
+  .my-card, .package-box {
+    padding: 20px;
+  }
+}
+@media (max-width: 575.98px) {
+  .my-card, .package-box {
+    padding: 15px;
+  }
+}
+
+.package-box {
+  position: relative;
+}
+.package-box .pack-number {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 50px;
+  width: 50px;
+  border-end-end-radius: 10px;
+  background-color: #371638;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  font-size: 25px;
+  font-weight: 700;
+}
+.package-box img {
+  max-width: 70%;
+  height: auto;
 }

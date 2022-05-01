@@ -436,6 +436,7 @@ input[type=number] {
 }
 
 .custom-file {
+  cursor: pointer;
   position: relative;
   display: inline-block;
   width: 100%;
@@ -444,6 +445,8 @@ input[type=number] {
 }
 
 .custom-file-input {
+  pointer-events: none;
+  cursor: pointer;
   position: relative;
   z-index: 2;
   width: 100%;
@@ -459,6 +462,7 @@ input[type=number] {
 }
 
 .custom-file-label {
+  cursor: pointer;
   position: absolute;
   line-height: 30px;
   padding: 5px;
@@ -475,6 +479,7 @@ input[type=number] {
   border-radius: 8px;
 }
 .custom-file-label::after {
+  cursor: pointer;
   -webkit-transition: all ease-in-out 0.3s;
   transition: all ease-in-out 0.3s;
   position: absolute;

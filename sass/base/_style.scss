@@ -543,6 +543,7 @@ button:focus {
   }
   h4{
     @extend %text-2;
+    font-weight: 400;
   }
   p{
     color: $gray-text;

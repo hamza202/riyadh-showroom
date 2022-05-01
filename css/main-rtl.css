@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import 'bootstrap.rtl.min.css';
 @import "fullpage.min.css";
 @import "bootstrap-select.min.css";
@@ -279,6 +280,7 @@ input[type=number] {
   display: -ms-flexbox;
   display: flex;
   position: absolute;
+  z-index: 2;
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
@@ -431,6 +433,67 @@ input[type=number] {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.custom-file {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 45px;
+  margin-bottom: 0;
+}
+
+.custom-file-input {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  height: 45px;
+  margin: 0;
+  opacity: 0;
+}
+.custom-file-input:focus ~ .custom-file-control {
+  border-color: #ced4da;
+}
+.custom-file-input:focus ~ .custom-file-control::before {
+  border-color: #ced4da;
+}
+
+.custom-file-label {
+  position: absolute;
+  line-height: 30px;
+  padding: 5px;
+  -webkit-padding-start: 30px;
+          padding-inline-start: 30px;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+  height: 45px;
+  color: #777;
+  background-color: #fff;
+  border: 1px solid #ced4da;
+  border-radius: 8px;
+}
+.custom-file-label::after {
+  -webkit-transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s;
+  position: absolute;
+  color: #000;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 3;
+  display: block;
+  height: 43px;
+  padding: 0 8px;
+  line-height: 37px;
+  content: "استعراض";
+  background-color: #F5F5F5;
+  border-radius: 8px;
+}
+
+.custom-file-label.change {
+  color: #000 !important;
 }
 
 header {

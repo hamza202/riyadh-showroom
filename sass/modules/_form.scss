@@ -48,6 +48,7 @@ input[type=number] {
     .input-img{
       display: flex;
       position: absolute;
+      z-index: 2;
       top: 50%;
       transform: translateY(-50%);
       #{$dir}:8px;
@@ -170,3 +171,71 @@ input[type=number] {
   display: flex;
   align-items: center;
 }
+
+
+//custom-file start
+.custom-file {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 45px;
+  margin-bottom: 0;
+}
+
+.custom-file-input {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  height: 45px;
+  margin: 0;
+  opacity: 0;
+
+  &:focus ~ .custom-file-control {
+    border-color: #ced4da;
+
+    &::before {
+      border-color: #ced4da;
+    }
+  }
+}
+
+.custom-file-label {
+
+  position: absolute;
+  line-height: 30px;
+  padding:5px;
+  padding-inline-start: 30px;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+  height: 45px;
+  //line-height: $custom-file-line-height;
+  color: #777;
+  background-color: $white;
+  border: 1px solid #ced4da;
+  border-radius: 8px;
+
+  &::after {
+    transition: all ease-in-out 0.3s;
+    position: absolute;
+    color: $black-color;
+    top: 0;
+    #{$opDir}: 0;
+    bottom: 0;
+    z-index: 3;
+    display: block;
+    height: 43px;
+    padding:0 8px;
+    line-height: 37px;
+    //color: white;
+    content: "استعراض";
+   background-color: #F5F5F5;
+    //border-left: $custom-file-border-width solid $custom-file-border-color;
+    border-radius: 8px;
+  }
+}
+.custom-file-label.change{
+  color: $black-color !important;
+}
+//custom-file End

@@ -76,21 +76,21 @@
   }
 }
 
-.profile-user-name p, .text-2, .our-breadcrumb .breadcrumb-title h1, .help-team-box .team-info h4, .help-section-container .help-section-title p, .user-menu span {
+.profile-user-name p, .text-2, .profile-space .profile-space-number span, .our-breadcrumb .breadcrumb-title h1, .help-team-box .team-info h4, .help-section-container .help-section-title p, .user-menu span {
   font-size: 18px;
 }
 @media (min-width: 1400px) {
-  .profile-user-name p, .text-2, .our-breadcrumb .breadcrumb-title h1, .help-team-box .team-info h4, .help-section-container .help-section-title p, .user-menu span {
+  .profile-user-name p, .text-2, .profile-space .profile-space-number span, .our-breadcrumb .breadcrumb-title h1, .help-team-box .team-info h4, .help-section-container .help-section-title p, .user-menu span {
     font-size: 21px;
   }
 }
 @media (max-width: 1199.98px) {
-  .profile-user-name p, .text-2, .our-breadcrumb .breadcrumb-title h1, .help-team-box .team-info h4, .help-section-container .help-section-title p, .user-menu span {
+  .profile-user-name p, .text-2, .profile-space .profile-space-number span, .our-breadcrumb .breadcrumb-title h1, .help-team-box .team-info h4, .help-section-container .help-section-title p, .user-menu span {
     font-size: 17px;
   }
 }
 @media (max-width: 575.98px) {
-  .profile-user-name p, .text-2, .our-breadcrumb .breadcrumb-title h1, .help-team-box .team-info h4, .help-section-container .help-section-title p, .user-menu span {
+  .profile-user-name p, .text-2, .profile-space .profile-space-number span, .our-breadcrumb .breadcrumb-title h1, .help-team-box .team-info h4, .help-section-container .help-section-title p, .user-menu span {
     font-size: 16px;
   }
 }
@@ -161,21 +161,21 @@
   }
 }
 
-.full-page-container h5, .title-3, .create-account-type-container .account-type-box .account-type-info h3 {
+.profile-space .profile-space-number, .full-page-container h5, .title-3, .create-account-type-container .account-type-box .account-type-info h3 {
   font-size: 26px;
 }
 @media (min-width: 1400px) {
-  .full-page-container h5, .title-3, .create-account-type-container .account-type-box .account-type-info h3 {
+  .profile-space .profile-space-number, .full-page-container h5, .title-3, .create-account-type-container .account-type-box .account-type-info h3 {
     font-size: 30px;
   }
 }
 @media (max-width: 1199.98px) {
-  .full-page-container h5, .title-3, .create-account-type-container .account-type-box .account-type-info h3 {
+  .profile-space .profile-space-number, .full-page-container h5, .title-3, .create-account-type-container .account-type-box .account-type-info h3 {
     font-size: 25px;
   }
 }
 @media (max-width: 575.98px) {
-  .full-page-container h5, .title-3, .create-account-type-container .account-type-box .account-type-info h3 {
+  .profile-space .profile-space-number, .full-page-container h5, .title-3, .create-account-type-container .account-type-box .account-type-info h3 {
     font-size: 18px;
   }
 }
@@ -1322,5 +1322,29 @@ button:focus {
           margin-inline-end: 6px;
   margin-bottom: -3px;
   width: 14px;
+  height: auto;
+}
+
+.profile-space {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.profile-space .profile-space-number {
+  padding: 0 15px;
+  border-radius: 8px;
+  background-color: #F5F5F5;
+  font-weight: 700;
+}
+.profile-space .profile-space-number span {
+  font-weight: 400;
+}
+
+.profile-package img {
+  width: 195px;
+  max-width: 50%;
   height: auto;
 }

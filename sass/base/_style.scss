@@ -505,3 +505,25 @@ button:focus {
     }
   }
 }
+.profile-space{
+  display: flex;
+  align-items: center;
+  .profile-space-number{
+    padding: 0 15px;
+    border-radius: 8px;
+    background-color: #F5F5F5;
+    @extend %title-3;
+    font-weight: 700;
+    span{
+      @extend .text-2;
+      font-weight: 400;
+    }
+  }
+}
+.profile-package{
+  img{
+    width: 195px;
+    max-width: 50%;
+    height: auto;
+  }
+}

@@ -1,16 +1,20 @@
-$('.open-menu-btn').on('click', function (){
+$('.open-menu-btn').on('click', function () {
     $('header').addClass('menu-is-open');
 })
-$('.close-menu-btn').on('click', function (){
+
+$('.close-menu-btn').on('click', function () {
     $('header').removeClass('menu-is-open');
 })
-$('select').selectpicker();
+
+if ($('select').length) {
+    $('select').selectpicker();
+}
 
 $("form").parsley({
     triggerAfterFailure: 'input changed.bs.select'
 })
 
-$('.custom-file input').on('change',function(e){
+$('.custom-file input').on('change', function (e) {
     //get the file name
     var fileName = e.target.files[0].name
     //replace the "Choose a file" label

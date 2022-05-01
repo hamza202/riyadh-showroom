@@ -15,6 +15,16 @@
     background-color: $white;
   }
 }
+.gray-outline-btn{
+  @extend .main-btn;
+  border-color:$gray-text ;
+  background-color: white;
+  color: $gray-text;
+  &:hover{
+    color: $gray-dark;
+    background-color: $gray-text;
+  }
+}
 .link{
   &:hover{
     color: $btn-bg;

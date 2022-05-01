@@ -406,3 +406,59 @@ button:focus {
     height: auto;
   }
 }
+.places-container{
+  .place-check{
+    position: relative;
+    .form-check-label{
+      background-color: #F5F5F5;
+      border-radius: 8px;
+      border: 1px solid #f5f5f5;
+      padding: 15px;
+      display: block;
+      cursor: pointer;
+      .check-text{
+        font-size: 14px;
+        color: #999999;;
+      }
+      .check-number{
+        font-size: 20px;
+        color: $black-color;
+        padding-inline-start: 5px;
+      }
+      .place{
+        padding-inline-start: 25px;
+        .check-number{
+          width: 60px;
+        }
+      }
+      .space{
+        position: relative;
+        &:before{
+          position: absolute;
+          content: '';
+          display: block;
+          background-color: #D4D4D4;
+          height: 100%;
+          width: 1px;
+          #{$dir}:0;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+        padding-inline-start: 20px;
+      }
+    }
+    .form-check-input{
+      cursor: pointer;
+      position: absolute;
+      #{$dir}:13px;
+      top: 50%;
+      transform: translateY(-50%);
+      margin: 0;
+      width: 1.1em;
+      height: 1.1em;
+      &:checked + label{
+        border-color: $btn-bg;
+      }
+    }
+  }
+}

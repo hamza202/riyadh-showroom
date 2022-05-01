@@ -199,7 +199,7 @@
   }
 }
 
-.main-btn {
+.main-btn, .gray-outline-btn {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -219,9 +219,19 @@
   -webkit-transition: all ease-in-out 0.3s;
   transition: all ease-in-out 0.3s;
 }
-.main-btn:hover {
+.main-btn:hover, .gray-outline-btn:hover {
   color: #911D74;
   background-color: #fff;
+}
+
+.gray-outline-btn {
+  border-color: #C1C1C1;
+  background-color: white;
+  color: #C1C1C1;
+}
+.gray-outline-btn:hover {
+  color: #646464;
+  background-color: #C1C1C1;
 }
 
 .link:hover {
@@ -1144,7 +1154,7 @@ button:focus {
   margin-bottom: 2rem;
   max-width: 90%;
 }
-.create-account-type-container .account-type-box .account-type-info .main-btn {
+.create-account-type-container .account-type-box .account-type-info .main-btn, .create-account-type-container .account-type-box .account-type-info .gray-outline-btn {
   min-width: 50%;
 }
 
@@ -1191,4 +1201,64 @@ button:focus {
 .package-box img {
   max-width: 70%;
   height: auto;
+}
+
+.places-container .place-check {
+  position: relative;
+}
+.places-container .place-check .form-check-label {
+  background-color: #F5F5F5;
+  border-radius: 8px;
+  border: 1px solid #f5f5f5;
+  padding: 15px;
+  display: block;
+  cursor: pointer;
+}
+.places-container .place-check .form-check-label .check-text {
+  font-size: 14px;
+  color: #999999;
+}
+.places-container .place-check .form-check-label .check-number {
+  font-size: 20px;
+  color: #000;
+  -webkit-padding-start: 5px;
+          padding-inline-start: 5px;
+}
+.places-container .place-check .form-check-label .place {
+  -webkit-padding-start: 25px;
+          padding-inline-start: 25px;
+}
+.places-container .place-check .form-check-label .place .check-number {
+  width: 60px;
+}
+.places-container .place-check .form-check-label .space {
+  position: relative;
+  -webkit-padding-start: 20px;
+          padding-inline-start: 20px;
+}
+.places-container .place-check .form-check-label .space:before {
+  position: absolute;
+  content: "";
+  display: block;
+  background-color: #D4D4D4;
+  height: 100%;
+  width: 1px;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+.places-container .place-check .form-check-input {
+  cursor: pointer;
+  position: absolute;
+  right: 13px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  margin: 0;
+  width: 1.1em;
+  height: 1.1em;
+}
+.places-container .place-check .form-check-input:checked + label {
+  border-color: #911D74;
 }

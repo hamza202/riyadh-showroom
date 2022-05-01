@@ -76,21 +76,21 @@
   }
 }
 
-.profile-user-name p, .text-2, .profile-space .profile-space-number span, .our-breadcrumb .breadcrumb-title h1, .help-team-box .team-info h4, .help-section-container .help-section-title p, .user-menu span {
+.profile-ticket-box h4, .profile-user-name p, .text-2, .profile-space .profile-space-number span, .our-breadcrumb .breadcrumb-title h1, .help-team-box .team-info h4, .help-section-container .help-section-title p, .user-menu span {
   font-size: 18px;
 }
 @media (min-width: 1400px) {
-  .profile-user-name p, .text-2, .profile-space .profile-space-number span, .our-breadcrumb .breadcrumb-title h1, .help-team-box .team-info h4, .help-section-container .help-section-title p, .user-menu span {
-    font-size: 21px;
+  .profile-ticket-box h4, .profile-user-name p, .text-2, .profile-space .profile-space-number span, .our-breadcrumb .breadcrumb-title h1, .help-team-box .team-info h4, .help-section-container .help-section-title p, .user-menu span {
+    font-size: 20px;
   }
 }
 @media (max-width: 1199.98px) {
-  .profile-user-name p, .text-2, .profile-space .profile-space-number span, .our-breadcrumb .breadcrumb-title h1, .help-team-box .team-info h4, .help-section-container .help-section-title p, .user-menu span {
+  .profile-ticket-box h4, .profile-user-name p, .text-2, .profile-space .profile-space-number span, .our-breadcrumb .breadcrumb-title h1, .help-team-box .team-info h4, .help-section-container .help-section-title p, .user-menu span {
     font-size: 17px;
   }
 }
 @media (max-width: 575.98px) {
-  .profile-user-name p, .text-2, .profile-space .profile-space-number span, .our-breadcrumb .breadcrumb-title h1, .help-team-box .team-info h4, .help-section-container .help-section-title p, .user-menu span {
+  .profile-ticket-box h4, .profile-user-name p, .text-2, .profile-space .profile-space-number span, .our-breadcrumb .breadcrumb-title h1, .help-team-box .team-info h4, .help-section-container .help-section-title p, .user-menu span {
     font-size: 16px;
   }
 }
@@ -1347,4 +1347,30 @@ button:focus {
   width: 195px;
   max-width: 50%;
   height: auto;
+}
+
+.profile-ticket-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+.profile-ticket-box .profile-ticket-img {
+  -webkit-margin-end: 15px;
+          margin-inline-end: 15px;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: #F5F5F5;
+}
+.profile-ticket-box .profile-ticket-img svg {
+  width: 45px;
+  height: auto;
+}
+.profile-ticket-box p {
+  color: #C1C1C1;
+  margin-top: 2px;
 }

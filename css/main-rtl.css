@@ -28,6 +28,10 @@
   color: #000;
 }
 
+.main-color {
+  color: #6D2B70 !important;
+}
+
 /* content better media queries */
 @font-face {
   font-family: "DIN";
@@ -1391,4 +1395,24 @@ button:focus {
 .profile-ticket-box p {
   color: #C1C1C1;
   margin-top: 2px;
+}
+
+.ticket-box {
+  background-color: #F5F5F5;
+  border-radius: 8px;
+  padding: 30px;
+  text-align: center;
+}
+.ticket-box img {
+  width: 125px;
+  height: 125px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+.ticket-box h3 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }

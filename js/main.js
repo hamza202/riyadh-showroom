@@ -8,11 +8,11 @@ $('.close-menu-btn').on('click', function () {
 
 if ($('select').length) {
     $('select').selectpicker();
-}
 
-$("form").parsley({
-    triggerAfterFailure: 'input changed.bs.select'
-})
+    $("form").parsley({
+        triggerAfterFailure: 'input changed.bs.select'
+    })
+}
 
 $('.custom-file input').on('change', function (e) {
     //get the file name

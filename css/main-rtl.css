@@ -1260,10 +1260,10 @@ button:focus {
   color: #999999;
 }
 .places-container .place-check .form-check-label .check-number {
+  direction: ltr;
   font-size: 20px;
   color: #000;
-  -webkit-padding-start: 5px;
-          padding-inline-start: 5px;
+  padding-right: 5px;
 }
 .places-container .place-check .form-check-label .place {
   -webkit-padding-start: 25px;
@@ -1415,4 +1415,65 @@ button:focus {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  line-height: 1.5;
+}
+
+.blog-box {
+  position: relative;
+  display: block;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.blog-box .blog-box-content {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  z-index: 3;
+  padding: 30px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+@media (max-width: 575.98px) {
+  .blog-box .blog-box-content {
+    padding: 15px;
+  }
+}
+.blog-box .blog-box-content .text-1 {
+  color: #fff;
+  display: block;
+}
+.blog-box .blog-box-content .blog-date {
+  color: #C1C1C1;
+  display: block;
+}
+.blog-box:before {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 90%;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(55, 22, 56, 0)), to(#2e132f));
+  background: linear-gradient(rgba(55, 22, 56, 0) 0%, #2e132f 100%);
+  opacity: 0.9;
+}
+.blog-box img {
+  min-width: 100%;
+  display: block;
+  margin: 0 auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 300px;
+  -webkit-transition: all 0.8s cubic-bezier(0.26, 0.66, 0.46, 0.81);
+  transition: all 0.8s cubic-bezier(0.26, 0.66, 0.46, 0.81);
+  -webkit-transform: scale(1) rotate(0deg);
+          transform: scale(1) rotate(0deg);
+}
+.blog-box:hover img {
+  -webkit-transform: scale(1.2) rotate(-5deg);
+          transform: scale(1.2) rotate(-5deg);
 }

@@ -432,9 +432,10 @@ button:focus {
         color: #999999;;
       }
       .check-number{
+        direction: ltr;
         font-size: 20px;
         color: $black-color;
-        padding-inline-start: 5px;
+        padding-#{$dir}:5px ;
       }
       .place{
         padding-inline-start: 25px;
@@ -566,5 +567,58 @@ button:focus {
   }
   h3{
     @include  oneline();
+    line-height: 1.5;
+  }
+}
+.blog-box{
+  position: relative;
+  display: block;
+  border-radius: 10px;
+  overflow: hidden;
+  .blog-box-content{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    z-index: 3;
+    padding: 30px;
+    @include media-breakpoint-down(sm){
+      padding: 15px;
+    }
+    @include oneline();
+    .text-1{
+      color: $white;
+      display: block;
+    }
+    .blog-date{
+      color: $gray-text;
+      display: block;
+    }
+  }
+  &:before{
+    content: '';
+    position: absolute;
+    display: block;
+    height: 90%;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    background: linear-gradient(rgba(55, 22, 56, 0) 0%, #2e132f 100%);
+    opacity: 0.9;
+  }
+  img{
+    min-width: 100%;
+    display: block;
+    margin: 0 auto;
+    object-fit: cover;
+    height: 300px;
+    transition: all 0.8s cubic-bezier(0.26,0.66,0.46,0.81);
+    transform: scale(1) rotate(0deg);
+  }
+  &:hover{
+    img{
+      transform: scale(1.2) rotate(-5deg);
+    }
   }
 }

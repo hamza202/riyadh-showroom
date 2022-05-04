@@ -45,6 +45,9 @@ input[type=number] {
   .form-input-container {
     position: relative;
     margin-bottom: 25px;
+    textarea{
+      resize: none;
+    }
     input {
       min-height: 45px;
     }

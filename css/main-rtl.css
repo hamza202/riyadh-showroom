@@ -303,6 +303,9 @@ input[type=number] {
   position: relative;
   margin-bottom: 25px;
 }
+.form .form-input-container textarea {
+  resize: none;
+}
 .form .form-input-container input {
   min-height: 45px;
 }
@@ -1476,4 +1479,35 @@ button:focus {
 .blog-box:hover img {
   -webkit-transform: scale(1.2) rotate(-5deg);
           transform: scale(1.2) rotate(-5deg);
+}
+
+.border-r-10 {
+  border-radius: 10px;
+}
+
+.contact-info {
+  margin-top: 40px;
+  padding: 40px;
+  background-color: #F5F5F5;
+  border-start-end-radius: 10px;
+  border-end-end-radius: 10px;
+}
+@media (max-width: 991.98px) {
+  .contact-info {
+    border-radius: 10px;
+    margin-top: 15px;
+  }
+}
+@media (max-width: 767.98px) {
+  .contact-info {
+    padding: 30px;
+  }
+}
+@media (max-width: 575.98px) {
+  .contact-info {
+    padding: 20px;
+  }
+}
+.contact-info .footer-social a {
+  border-color: #6D2B70;
 }

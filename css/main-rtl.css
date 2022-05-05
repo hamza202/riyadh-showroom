@@ -80,21 +80,21 @@
   }
 }
 
-.profile-ticket-box h4, .profile-user-name p, .text-2, .profile-space .profile-space-number span, .our-breadcrumb .breadcrumb-title h1, .help-team-box .team-info h4, .help-section-container .help-section-title p, .user-menu span {
+.profile-ticket-box h4, .profile-user-name p, .text-2, .accordion .accordion-button, .profile-space .profile-space-number span, .our-breadcrumb .breadcrumb-title h1, .help-team-box .team-info h4, .help-section-container .help-section-title p, .user-menu span {
   font-size: 18px;
 }
 @media (min-width: 1400px) {
-  .profile-ticket-box h4, .profile-user-name p, .text-2, .profile-space .profile-space-number span, .our-breadcrumb .breadcrumb-title h1, .help-team-box .team-info h4, .help-section-container .help-section-title p, .user-menu span {
+  .profile-ticket-box h4, .profile-user-name p, .text-2, .accordion .accordion-button, .profile-space .profile-space-number span, .our-breadcrumb .breadcrumb-title h1, .help-team-box .team-info h4, .help-section-container .help-section-title p, .user-menu span {
     font-size: 20px;
   }
 }
 @media (max-width: 1199.98px) {
-  .profile-ticket-box h4, .profile-user-name p, .text-2, .profile-space .profile-space-number span, .our-breadcrumb .breadcrumb-title h1, .help-team-box .team-info h4, .help-section-container .help-section-title p, .user-menu span {
+  .profile-ticket-box h4, .profile-user-name p, .text-2, .accordion .accordion-button, .profile-space .profile-space-number span, .our-breadcrumb .breadcrumb-title h1, .help-team-box .team-info h4, .help-section-container .help-section-title p, .user-menu span {
     font-size: 17px;
   }
 }
 @media (max-width: 575.98px) {
-  .profile-ticket-box h4, .profile-user-name p, .text-2, .profile-space .profile-space-number span, .our-breadcrumb .breadcrumb-title h1, .help-team-box .team-info h4, .help-section-container .help-section-title p, .user-menu span {
+  .profile-ticket-box h4, .profile-user-name p, .text-2, .accordion .accordion-button, .profile-space .profile-space-number span, .our-breadcrumb .breadcrumb-title h1, .help-team-box .team-info h4, .help-section-container .help-section-title p, .user-menu span {
     font-size: 16px;
   }
 }
@@ -1510,4 +1510,37 @@ button:focus {
 }
 .contact-info .footer-social a {
   border-color: #6D2B70;
+}
+
+.accordion .accordion-item {
+  border-radius: 0 !important;
+  border-right: 0 !important;
+  border-left: 0 !important;
+}
+.accordion .accordion-item .accordion-button {
+  border-radius: 0 !important;
+}
+.accordion .accordion-button {
+  color: #6D2B70;
+  font-weight: 500;
+}
+.accordion .accordion-body {
+  padding-top: 5px;
+}
+
+.accordion-button:not(.collapsed) {
+  color: #6D2B70;
+  background-color: transparent;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.accordion-button:focus {
+  border-color: transparent;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.accordion-button:not(.collapsed)::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%236D2B70'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
 }

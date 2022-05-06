@@ -80,21 +80,21 @@
   }
 }
 
-.profile-ticket-box h4, .profile-user-name p, .text-2, .exhibitors-container .exhibitor-card .img-info-container .exhibitor-img-container .exhibitor-place-number b, .accordion .accordion-button, .profile-space .profile-space-number span, .our-breadcrumb .breadcrumb-title h1, .help-team-box .team-info h4, .help-section-container .help-section-title p, .user-menu span {
+.profile-ticket-box h4, .profile-user-name p, .text-2, .organizer-name-card .organizer-name h4, .exhibitors-container .exhibitor-card .img-info-container .exhibitor-img-container .exhibitor-place-number b, .accordion .accordion-button, .profile-space .profile-space-number span, .our-breadcrumb .breadcrumb-title h1, .help-team-box .team-info h4, .help-section-container .help-section-title p, .user-menu span {
   font-size: 18px;
 }
 @media (min-width: 1400px) {
-  .profile-ticket-box h4, .profile-user-name p, .text-2, .exhibitors-container .exhibitor-card .img-info-container .exhibitor-img-container .exhibitor-place-number b, .accordion .accordion-button, .profile-space .profile-space-number span, .our-breadcrumb .breadcrumb-title h1, .help-team-box .team-info h4, .help-section-container .help-section-title p, .user-menu span {
+  .profile-ticket-box h4, .profile-user-name p, .text-2, .organizer-name-card .organizer-name h4, .exhibitors-container .exhibitor-card .img-info-container .exhibitor-img-container .exhibitor-place-number b, .accordion .accordion-button, .profile-space .profile-space-number span, .our-breadcrumb .breadcrumb-title h1, .help-team-box .team-info h4, .help-section-container .help-section-title p, .user-menu span {
     font-size: 20px;
   }
 }
 @media (max-width: 1199.98px) {
-  .profile-ticket-box h4, .profile-user-name p, .text-2, .exhibitors-container .exhibitor-card .img-info-container .exhibitor-img-container .exhibitor-place-number b, .accordion .accordion-button, .profile-space .profile-space-number span, .our-breadcrumb .breadcrumb-title h1, .help-team-box .team-info h4, .help-section-container .help-section-title p, .user-menu span {
+  .profile-ticket-box h4, .profile-user-name p, .text-2, .organizer-name-card .organizer-name h4, .exhibitors-container .exhibitor-card .img-info-container .exhibitor-img-container .exhibitor-place-number b, .accordion .accordion-button, .profile-space .profile-space-number span, .our-breadcrumb .breadcrumb-title h1, .help-team-box .team-info h4, .help-section-container .help-section-title p, .user-menu span {
     font-size: 17px;
   }
 }
 @media (max-width: 575.98px) {
-  .profile-ticket-box h4, .profile-user-name p, .text-2, .exhibitors-container .exhibitor-card .img-info-container .exhibitor-img-container .exhibitor-place-number b, .accordion .accordion-button, .profile-space .profile-space-number span, .our-breadcrumb .breadcrumb-title h1, .help-team-box .team-info h4, .help-section-container .help-section-title p, .user-menu span {
+  .profile-ticket-box h4, .profile-user-name p, .text-2, .organizer-name-card .organizer-name h4, .exhibitors-container .exhibitor-card .img-info-container .exhibitor-img-container .exhibitor-place-number b, .accordion .accordion-button, .profile-space .profile-space-number span, .our-breadcrumb .breadcrumb-title h1, .help-team-box .team-info h4, .help-section-container .help-section-title p, .user-menu span {
     font-size: 16px;
   }
 }
@@ -184,21 +184,21 @@
   }
 }
 
-.title-4 {
+.title-4, .organizer-name-card .organizer-name h3 {
   font-size: 22px;
 }
 @media (min-width: 1400px) {
-  .title-4 {
+  .title-4, .organizer-name-card .organizer-name h3 {
     font-size: 25px;
   }
 }
 @media (max-width: 1199.98px) {
-  .title-4 {
+  .title-4, .organizer-name-card .organizer-name h3 {
     font-size: 20px;
   }
 }
 @media (max-width: 575.98px) {
-  .title-4 {
+  .title-4, .organizer-name-card .organizer-name h3 {
     font-size: 18px;
   }
 }
@@ -1651,4 +1651,79 @@ button:focus {
   width: 100%;
   -ms-flex-item-align: end;
       align-self: flex-end;
+}
+
+.organizer-card {
+  padding: 15px;
+  border-radius: 10px;
+  background-color: #fff;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.organizer-card .organizer-inner {
+  width: 100%;
+}
+.organizer-card .social-style2 {
+  width: 100%;
+  max-width: 350px;
+  margin: 0 auto;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.organizer-name-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.organizer-name-card .organizer-name {
+  -webkit-padding-start: 10px;
+          padding-inline-start: 10px;
+}
+.organizer-name-card .organizer-name h3 {
+  margin-bottom: 5px;
+}
+.organizer-name-card .organizer-name h4 {
+  font-weight: 400;
+}
+.organizer-name-card img {
+  height: 70px;
+  width: 70px;
+  border-radius: 10px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media (max-width: 575.98px) {
+  .organizer-name-card img {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+.service-card {
+  border: 1px solid #D4D4D4;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.list-style2 li {
+  -webkit-padding-start: 10px;
+          padding-inline-start: 10px;
+  position: relative;
+}
+.list-style2 li:before {
+  content: "";
+  position: absolute;
+  top: 13px;
+  right: 0;
+  width: 6px;
+  height: 2px;
+  background-color: #000;
 }

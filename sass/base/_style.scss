@@ -960,3 +960,65 @@ button:focus {
     }
   }
 }
+.plan-title{
+  &:hover{
+    background-color: $btn-bg;
+    color: $white;
+  }
+}
+.plan-box{
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-height: 120px;
+  padding:20px 15px;
+  background-color: #fff;
+  border-radius: 10px;
+  .plan-box-content{
+    width: 100%;
+  }
+  .plan-time{
+    width: 57px;
+    height: 57px;
+    border-radius: 50%;
+    background-color: $text-color;
+    color: $white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: -35px;
+    #{$opDir}:-5px;
+    text-align: center;
+    span{
+      display: block;
+      margin-top: -10px;
+    }
+    b{
+      display: block;
+      margin-bottom: -6px;
+      @extend .text-1;
+    }
+    small{
+      margin-top: -3px;
+      display: block;
+    }
+  }
+}
+.list-style3{
+  li:not(:last-child){
+    margin-bottom: 5px;
+  }
+}
+.plan-box-content{
+  li{
+    font-size: 14px;
+  }
+  p{
+    font-size: 14px;
+  }
+  font-size: 14px;
+}
+.plan-card{
+  margin-top: 80px;
+}
